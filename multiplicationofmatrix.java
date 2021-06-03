@@ -1,7 +1,5 @@
 package ARRAYS;
-
 import java.util.Scanner;
-
 
 public class multiplicationofmatrix {
 

@@ -9,7 +9,6 @@ public class maxHeap {
         int temp = a[i];
         a[i] = a[largest];
         a[largest] = temp;
-
         return a;
 
     }

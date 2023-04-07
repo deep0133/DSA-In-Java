@@ -48,6 +48,6 @@ public class maxHeap {
             heapify(a, n, i);
 
         for (int i = 0; i < n; i++)
-            System.out.println(a[i]);
+            System.out.print(a[i] + " ");
     }
 }

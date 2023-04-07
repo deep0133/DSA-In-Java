@@ -9,9 +9,9 @@ public class Slide {
         int ans[] = new int[n - k + 1];
         int i = 0;
         for (i = 0; i < k; i++) {
-            while (!dq.isEmpty() && a[dq.peekLast()] <= a[i]) {
+            while (!dq.isEmpty() && a[dq.peekLast()] <= a[i])
                 dq.remove(dq.peekLast());
-            }
+
             dq.addLast(i);
         }
 
@@ -20,9 +20,8 @@ public class Slide {
 
         for (; i < n; i++) {
 
-            while (!dq.isEmpty() && dq.peekFirst() <= i-k) {
+            while (!dq.isEmpty() && dq.peekFirst() <= i - k)
                 dq.remove(dq.peekFirst());
-            }
 
             while (!dq.isEmpty() && a[i] >= a[dq.peekLast()])
                 dq.removeLast();
@@ -32,9 +31,8 @@ public class Slide {
             j++;
         }
 
-        for (i = 0; i < n - k + 1; i++) {
+        for (i = 0; i < n - k + 1; i++)
             System.out.println(ans[i]);
-        }
 
     }
 

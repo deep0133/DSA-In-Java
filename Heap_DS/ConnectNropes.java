@@ -9,13 +9,13 @@ public class ConnectNropes {
 
         PriorityQueue<Integer> pq = new PriorityQueue<>();
 
-        for (int i = 0; i < a.length; i++) {
+        for (int i = 0; i < a.length; i++)
             pq.add(a[i]);
-        }
 
         int cost = 0;
 
         while (pq.size() > 1) {
+
             int first = pq.poll();
             int second = pq.poll();
 
@@ -35,12 +35,10 @@ public class ConnectNropes {
         int n = sc.nextInt();
         int a[] = new int[n];
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++)
             a[i] = sc.nextInt();
-        }
 
         sc.close();
-
         connectRopesWithMinCost(a, n);
 
     }

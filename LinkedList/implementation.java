@@ -11,9 +11,7 @@ public class implementation {
         mll.add(5);
 
         mll.insert(1, 2);
-
         mll.remove(2);
-
         mll.print();
 
         System.out.print("size of list : " + mll.size());

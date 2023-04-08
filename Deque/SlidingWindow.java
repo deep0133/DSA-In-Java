@@ -20,9 +20,8 @@ public class SlidingWindow {
 
         for (; i < n; i++) {
 
-            while (dq.size() > 0 && a[dq.peekFirst()] <= i - k) {
+            while (dq.size() > 0 && a[dq.peekFirst()] <= i - k)
                 dq.remove(dq.peekFirst());
-            }
 
             while (!dq.isEmpty() && a[i] >= a[dq.peekLast()])
                 dq.removeLast();

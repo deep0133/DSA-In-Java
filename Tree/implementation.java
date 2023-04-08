@@ -31,7 +31,6 @@ public class implementation {
         View(root, 1);
 
         topView(root);
-
         bottomView(root);
 
         convertToList(root);
